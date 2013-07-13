@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/demo05/index.html" line="37" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5c177a97-1cc0-4e31-997f-33ff2559cd82" name="Default" comment="" />
     <ignored path="angular.iws" />
@@ -7,7 +10,7 @@
     <file path="/digest_spec.js" changelist="5c177a97-1cc0-4e31-997f-33ff2559cd82" time="1373684115829" ignored="false" />
     <file path="/scope_spec.js" changelist="5c177a97-1cc0-4e31-997f-33ff2559cd82" time="1373684825692" ignored="false" />
     <file path="/SpecRunner.html" changelist="5c177a97-1cc0-4e31-997f-33ff2559cd82" time="1373684682095" ignored="false" />
-    <file path="/index.html" changelist="5c177a97-1cc0-4e31-997f-33ff2559cd82" time="1373687600920" ignored="false" />
+    <file path="/index.html" changelist="5c177a97-1cc0-4e31-997f-33ff2559cd82" time="1373688643338" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +31,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo04/index.html">
+        <entry file="file://$PROJECT_DIR$/demo05/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="322" selection-end="322" vertical-scroll-proportion="0.2595978">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo03/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="495" selection-end="495" vertical-scroll-proportion="-9.666667">
+            <state line="25" column="8" selection-start="669" selection-end="669" vertical-scroll-proportion="0.38391224">
               <folding />
             </state>
           </provider>
@@ -61,6 +55,7 @@
         <option value="$PROJECT_DIR$/spec/ut/demo03/index.html" />
         <option value="$PROJECT_DIR$/demo03/index.html" />
         <option value="$PROJECT_DIR$/demo04/index.html" />
+        <option value="$PROJECT_DIR$/demo05/index.html" />
       </list>
     </option>
   </component>
@@ -123,7 +118,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo04" />
+              <option name="myItemId" value="demo05" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -137,7 +132,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo03" />
+              <option name="myItemId" value="demo04" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -150,6 +145,9 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -329,14 +327,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo03/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="495" selection-end="495" vertical-scroll-proportion="-9.666667">
+        <state line="19" column="12" selection-start="495" selection-end="495" vertical-scroll-proportion="0.42413163">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo04/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="322" selection-end="322" vertical-scroll-proportion="0.2595978">
+        <state line="8" column="52" selection-start="240" selection-end="240" vertical-scroll-proportion="-3.4166667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo05/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="669" selection-end="669" vertical-scroll-proportion="0.38391224">
           <folding />
         </state>
       </provider>
