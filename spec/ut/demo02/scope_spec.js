@@ -18,7 +18,6 @@ describe("scope test", function () {
     });
 
     // ??????????????
-
     it("should inherit from partent scope", function () {
         var child_scope = scope.$new();
 
