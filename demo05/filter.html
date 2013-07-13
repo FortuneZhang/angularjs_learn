@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='my-app'>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+    <script type="text/javascript">
+        var my_app = angular.module("my-app", []);
+
+        my_app.filter('add_filter', function () {
+            return function (text) {
+                if (text == null)
+                    return ""
+                return text + ':add_filter';
+            };
+        });
+
+    </script>
+
+</head>
+<body>
+
+<input ng-model='name' type="text">
+
+<p>{{name | add_filter }}</p>
+
+</body>
+</html>
