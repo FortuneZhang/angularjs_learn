@@ -6,10 +6,23 @@
 
     <script type="text/javascript">
 
-        function   MainCtrl($scope) {
+        function   MainCtrl($scope,$timeout) {
 
             $scope.count =  9 ;
 
+            $scope.run = function () {
+                $timeout(function(){
+                    $scope.count += 1;
+                    $scope.run();
+                },1000);
+            };
+            $scope.run();
+
+
+//
+//            $scope.run1 = function () {
+//                  $scope.cost += 1 ;
+//            };
         }
     </script>
 

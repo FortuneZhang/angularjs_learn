@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Angularjs Class Binding</title>
+    <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+    <script type="text/javascript">
+        function MainController($scope) {
+
+
+
+        }
+        function ParentController($scope) {
+              $scope.data1 = {message:""};
+        }
+
+        function FirstController($scope) {
+
+        }
+
+    </script>
+
+</head>
+<body ng-app>
+
+<div ng-controller="MainController">
+    <input type="text" ng-model='message'>
+
+    <p>
+        First:{{message}}
+    </p>
+</div>
+
+
+<div ng-controller="ParentController">
+    <input type="text" ng-model='data1.message'>
+
+    <p>
+        First:{{data1.message}}
+    </p>
+
+    <div ng-controller="FirstController">
+        <input type="text" ng-model='data1.message'>
+
+        <p>
+            First:{{data1.message}}
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
