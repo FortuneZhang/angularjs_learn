@@ -23,33 +23,33 @@
             }
         });
 
-
-        my_app.directive("supperman03", function () {
-            return {
-                restrict: "E",
-                link: function () {
-
-                    alert("I\' Supperman03");
-                }
-
-            }
-        });
-
-        my_app.directive("supperman04", function () {
-            return {
-                restrict: "A",
-                link: function () {
-
-                    alert("I\' supperman04");
-                }
-
-            }
-        });
+        //
+        //        my_app.directive("supperman03", function () {
+        //            return {
+        //                restrict: "E",
+        //                link: function () {
+        //
+        //                    alert("I\' Supperman03");
+        //                }
+        //
+        //            }
+        //        });
+        //
+        //        my_app.directive("supperman04", function () {
+        //            return {
+        //                restrict: "A",
+        //                link: function () {
+        //
+        //                    alert("I\' supperman04");
+        //                }
+        //
+        //            }
+        //        });
         my_app.directive("superman05", function () {
             return {
-                restrict:"E",
-                template:"<div class='well'> lllll</div>",
-                link: function(scope,element,attrs) {
+                restrict: "E",
+                template: "<div class='well'> lllll</div>",
+                link: function (scope, element, attrs) {
                     element.bind("mouseenter", function () {
                         element.addClass(attrs.enter)
                     });
@@ -59,6 +59,25 @@
                 }
             }
         });
+
+        my_app.controller("MainCtrl",function ($scope) {
+
+            $scope.load_more = function () {
+                alert("load ing more...");
+            }
+
+        }).directive("superman04", function () {
+                    return {
+                        restrict: "E",
+                        template: "<div class='well'> click to load more</div>",
+                        link: function (scope, element, attrs) {
+//                            attrs.click ;
+                            element.bind("click", function () {
+                                scope.$apply(attrs.click);
+                            });
+                        }
+                    }
+                });
 
     </script>
 
@@ -78,13 +97,21 @@
 <div>
 
 
-
-<div superman02></div>
-<!--<div supperman04></div>-->
+    <div superman02></div>
+    <!--<div supperman04></div>-->
 </div>
 
 <div>
     <superman05 enter="alert"></superman05>
+
+</div>
+
+
+<div ng-controller="MainCtrl">
+
+    <superman04 click="load_more()">
+
+    </superman04>
 
 </div>
 
