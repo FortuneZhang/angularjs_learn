@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app='my-app'>
+<head>
+    <title>Server</title>
+    <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+    <script type="text/javascript">
+
+        var my_app = angular.module("my-app", []);
+
+//        my_app.factory("revers",[function() {
+//            return function(text) {
+//                return '--' + text ;
+//            };
+//        }])
+
+        my_app.factory("log", function () {
+            return function(level,text) {
+                console.log(level + "->" + text);
+
+            };
+        });
+
+        my_app.factory("reverse", function (log) {
+            return function(text) {
+                log("debug",text);
+                return text + 'd' ;
+            };
+        });
+
+
+
+        my_app.controller('FirstController', function ($scope,reverse) {
+            $scope.reverse = function () {
+                $scope.reverse_title = "after:" + reverse($scope.title);
+            };
+        });
+
+//        SecondController.$inject = ["$scope",'reverse'];
+
+
+        my_app.controller("SecondController", function ($scope) {
+            $scope.reverse = function () {
+                $scope.reverse_content = "after:" + $scope.content.trim();
+            };
+        })
+
+
+    </script>
+
+</head>
+<body ng-app>
+
+<div ng-controller="FirstController">
+    <input type="text" ng-model='title'>
+    <button ng-click='reverse()' type="button">reverse</button>
+
+    <p>
+        title:{{reverse_title}}
+    </p>
+
+</div>
+
+<div ng-controller="SecondController">
+    <input type="text" ng-model='content'>
+    <button ng-click='reverse()' type="button">reverse</button>
+
+    <p>
+        content:{{reverse_content}}
+    </p>
+
+</div>
+
+
+</body>
+</html>
